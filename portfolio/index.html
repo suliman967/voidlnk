@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- ============================================================
+       CUSTOMIZE: Change page title & meta description
+       ============================================================ -->
+  <title>Suliman - Email writer &amp; Brand Strategist</title>
+  <meta name="description" content="Premium copywriter helping ambitious brands find their voice, sharpen their message, and convert with confidence." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Three.js for 3D section -->
+  <script src="js/three.min.js"></script>
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <!-- CUSTOMIZE: Your name / logo text -->
+      <a href="#" class="nav__logo">Suliman<span>.</span></a>
+      <ul class="nav__links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <!-- CUSTOMIZE: CTA button text and email -->
+      <a href="https://calendly.com/voidlnkmarketing/30min" class="nav__cta">Book a free call</a>
+      <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#work" class="mobile-link">Work</a></li>
+      <li><a href="#services" class="mobile-link">Services</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <main>
+
+    <!-- ============================================================
+         HERO SECTION
+         CUSTOMIZE: headline, subheadline, button links, marquee items
+         ============================================================ -->
+  <!-- ── HERO SECTION ───────────────────────────────────────── -->
+<section class="hero" id="hero"> 
+  
+  <!-- The Background Text (Behind everything) -->
+  <div class="hero__bg-text" aria-hidden="true"></div>
+
+  <!-- The 3D Scene (Background) -->
+  <canvas id="heroCanvas"></canvas>
+
+  <!-- The Content (Foreground) -->
+  <div class="hero__content">
+    <div class="hero__eyebrow reveal">
+      ✦ Available for projects &middot; 2026
+    </div>
+    
+    <h1 class="hero__headline reveal reveal--delay-1">
+      Profitable Emails<br /><em>that sound like you</em>
+    </h1>
+    
+    <p class="hero__sub reveal reveal--delay-2">
+    I fix your email friction... taking you from a 20% open rate to 40% and driving the actions that grow your business.
+    </p>
+    
+    <div class="hero__actions reveal reveal--delay-3">
+      <a href="#work" class="btn btn--primary">See My Work</a>
+    </div>
+  </div>
+
+</section>
+      <!-- CUSTOMIZE: Marquee strip items -->
+      <div class="hero__marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>Brand Voice</span><span class="dot">&middot;</span>
+          <span>Inbox Placemen</span><span class="dot">&middot;</span>
+          <span>High Open Rates</span><span class="dot">&middot;</span>
+          <span>Emails That Convert</span><span class="dot">&middot;</span>
+          <span>Strong Positioning</span><span class="dot">&middot;</span>
+          <span>More Revenue</span><span class="dot">&middot;</span>
+          <span>Brand Voice</span><span class="dot">&middot;</span>
+          <span>Inbox Placemen</span><span class="dot">&middot;</span>
+          <span>High Open Rates</span><span class="dot">&middot;</span>
+          <span>Emails That Convert</span><span class="dot">&middot;</span>
+          <span>Strong Positioning</span><span class="dot">&middot;</span>
+           <span>More Revenue</span><span class="dot">&middot;</span>
+        </div>
+      </div>
+
+    <!-- ============================================================
+         LOGOS / SOCIAL PROOF BAR
+         CUSTOMIZE: Replace company names with real clients or SVG logos
+         ============================================================ -->
+    <section class="logos reveal">
+      <p class="logos__label">Trusted by brands at</p>
+      <div class="logos__row">
+        <span class="logo-item">Testomaxing</span>
+        <span class="logo-item">Next Move Only</span>
+        <span class="logo-item">Brayne AI</span>
+        <span class="logo-item">Vault Syndicate</span>
+        <span class="logo-item">Typewriting AI</span>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ABOUT SECTION
+         CUSTOMIZE: headline, bio paragraphs, stats
+         ============================================================ -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="about__grid">
+          <div class="about__left">
+            <span class="section-tag reveal">About</span>
+            <h2 class="section-headline reveal reveal--delay-1">
+              I write copy that gets opened <br /><em>read, and actually works</em>
+            </h2>
+          </div>
+          <div class="about__right">
+            <p class="about__body reveal reveal--delay-2">
+                Hi, I’m Suliman.
+
+I work with personal brands on the email side of their business... deliverability, brand voice, and emails people actually read.
+
+I care about making emails feel real.
+I skip the marketing scripts and the over-polished fluff. I focus on clear, honest writing that turns readers into buyers.
+
+            <p class="about__body reveal reveal--delay-3">
+               A lot of good businesses don’t have a product problem.
+Their emails just aren’t landing, getting opened, or saying the right thing.
+
+That’s the part I fix.
+            <!-- CUSTOMIZE: Stats — number + label -->
+            <div class="about__stats">
+              <div class="stat reveal reveal--delay-4">
+                <span class="stat__number">2+</span>
+                <span class="stat__label">Years experience</span>
+              </div>
+              <div class="stat reveal reveal--delay-4">
+                <span class="stat__number">10+</span>
+                <span class="stat__label">Projects delivered</span>
+              </div>
+              <div class="stat reveal reveal--delay-4">
+                <span class="stat__number">98%</span>
+                <span class="stat__label">Client satisfaction</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CASE STUDIES / WORK SECTION
+         CUSTOMIZE: Each article = one case study
+         ============================================================ -->
+    <section class="work section" id="work">
+      <div class="container">
+        <div class="work__header">
+          <span class="section-tag reveal">Selected Work</span>
+          <h2 class="section-headline reveal reveal--delay-1">Case Studies</h2>
+        </div>
+
+        <div class="work__list">
+        <!-- CASE STUDY 1 -->
+        <article class="case-study reveal" data-index="01">
+          <div class="case-study__meta">
+            <span class="case-study__tag">Rates &middot; </span>
+            <span class="case-study__year">2025</span>
+          </div>
+          <div class="case-study__content">
+            <h3 class="case-study__title">Email Deliverability Fix</h3>
+            <p class="case-study__summary">
+              An email sequence aimed at fixing deliverability; it prioritizes high engagement to rebuild sender reputation.
+            </p>
+            <ul class="case-study__results">
+              <li>Emails started to land in the primary inbox</li>
+              <li>+30% in Open Rates</li>
+              <li>+3% in Click-Through Rates</li>
+            </ul>
+          </div>
+          <div class="case-study__arrow">
+            <!-- CUSTOMIZE: href to full case study page -->
+            <a href="https://docs.google.com/document/d/1o5PhK6MUKmzMKKmG2k5UUXPGh2aRqXrYT74rooBQNYI/edit?usp=sharing" class="btn btn--ghost case-study__button" aria-label="Read case study">View emails & proof</a>
+          </div>
+        </article>
+
+        <!-- CASE STUDY 2 -->
+        <article class="case-study reveal" data-index="02">
+          <div class="case-study__meta">
+            <span class="case-study__tag">Voice &middot; </span>
+            <span class="case-study__year">2025</span>
+          </div>
+          <div class="case-study__content">
+            <h3 class="case-study__title">Building a Voice for a Brand Newsletter</h3>
+            <p class="case-study__summary">
+             Built a clear voice system the whole team could follow...how the brand speaks, what it says, and what it avoids... Made it simple, usable, and consistent across everything.
+            </p>
+            <ul class="case-study__results">
+              <li>More than 49% increase in Open Rate</li>
+              <li>Consistent engagement across all emails</li>
+              <li>Became the foundation for future brand and content work</li>
+            </ul>
+          </div>
+          <div class="case-study__arrow">
+            <a href="https://docs.google.com/document/d/1gv_qAVnQlxuSPv8jzTtYDh9Mp3nmv1KwaL6Ri2J3CIQ/edit?usp=sharing" class="btn btn--ghost case-study__button" aria-label="Read case study">View emails & proof</a>
+          </div>
+        </article>
+
+        <!-- CASE STUDY 3 -->
+        <article class="case-study reveal" data-index="03">
+          <div class="case-study__meta">
+            <span class="case-study__tag">Revive &middot;</span>
+            <span class="case-study__year">2026</span>
+          </div>
+          <div class="case-study__content">
+            <h3 class="case-study__title">Email · Re-engagement</h3>
+            <p class="case-study__summary">
+              Built a short re-engagement sequence focused on:
+getting attention back...
+rebuilding interest...
+making people actually want to open again
+            </p>
+            <ul class="case-study__results">
+              <li>Open rates increased</li>
+              <li>Click-through rate improved</li>
+              <li>List became active again</li>
+            </ul>
+          </div>
+          <div class="case-study__arrow">
+            <a href="https://docs.google.com/document/d/1LNlm7tuDsO0hWA1-N_X_QaBW3y4UFHlcbeOkRzYP5g4/edit?usp=sharing" class="btn btn--ghost case-study__button" aria-label="Read case study">View emails & proof</a>
+          </div>
+        </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PREMIUM 3D SECTION  (Three.js canvas)
+         CUSTOMIZE: headline and sub copy inside overlay
+         ============================================================ -->
+    <section class="canvas-section" id="canvas-section">
+      <canvas id="threeCanvas"></canvas>
+      <div class="canvas-section__overlay">
+        <h2 class="canvas-section__headline reveal">
+          Every brand has<br /><em>one true voice.</em>
+        </h2>
+        <p class="canvas-section__sub reveal reveal--delay-1">
+          My job is to find it, shape it, and set it to work.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SERVICES SECTION
+         CUSTOMIZE: service card title, description, price
+         ============================================================ -->
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="services__header">
+          <span class="section-tag reveal">Services</span>
+          <h2 class="section-headline reveal reveal--delay-1">What I do with emails</h2>
+        </div>
+        <div class="services__grid">
+
+          <div class="service-card reveal">
+            <span class="service-card__num">01</span>
+            <h3 class="service-card__title">Email Deliverability</h3>
+            <p class="service-card__desc">If your emails don’t land, nothing else matters.
+
+I fix your setup, reputation, and flow so your emails actually reach the inbox... not spam.</p>
+            <span class="service-card__price">→ Best for: lists hitting spam or low opens</span>
+          </div>
+
+          <div class="service-card reveal reveal--delay-1">
+            <span class="service-card__num">02</span>
+            <h3 class="service-card__title">Email Brand Voice</h3>
+            <p class="service-card__desc">
+
+Your brand has a unique voice. I help you find it, shape it, and use it to connect with your audience in a way that feels authentic and drives results.
+            </p>
+            <span class="service-card__price">→ Best for: brands that want to connect with their audience</span>
+          </div>
+
+          <div class="service-card reveal reveal--delay-2">
+            <span class="service-card__num">03</span>
+            <h3 class="service-card__title">Email Strategy & Sequences</h3>
+            <p class="service-card__desc"> 
+
+I build flows and sequences that guide people from attention → trust → action.</p>
+            <span class="service-card__price">→ Best for: inconsistent or random emailing</span>
+          </div>
+
+          <div class="service-card reveal reveal--delay-3">
+            <span class="service-card__num">04</span>
+            <h3 class="service-card__title">Campaigns That Sell</h3>
+            <p class="service-card__desc">Comprehensive email marketing that covers every angle: strategic launches, aggressive promos, and value-driven weekly updates.</p>
+            <span class="service-card__price">→ Best for: launches and promotions</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         TESTIMONIALS
+         CUSTOMIZE: quote, name, role/company
+         ============================================================ -->
+    <section class="testimonials section" id="testimonials">
+      <div class="container">
+        <span class="section-tag reveal">Testimonials</span>
+        <div class="testimonials__grid">
+
+          <blockquote class="testimonial reveal">
+            <p class="testimonial__quote">"Thank you for your honesty and flexibility. Everything you’ve done for my email list has been genuinely helpful... you improved our deliverability and took our open rates from around 20% to 40%… and the number of subscribers keeps growing day by day."</p>
+            <footer class="testimonial__author">
+              <div class="testimonial__author-details">
+                <strong>Arif Bin Shukri</strong>
+                <span>CEO, Testomaxing</span>
+              </div>
+              <!-- Replace the href below with your actual Testomaxing brand link -->
+              <a href="https://x.com/testomaxing" class="btn btn--ghost testimonial__brand-btn" target="_blank" rel="noopener">Visit Testomaxing</a>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial reveal reveal--delay-1">
+            <p class="testimonial__quote">"His mind is sharp, but his work ethic is even sharper... he didn't ask for applause; he asked for the mission, and he delivered. Since day one… he’s shown nothing but precision, discipline, and dedication."</p>
+            <footer class="testimonial__author">
+              <div class="testimonial__author-details">
+                <strong>Marc</strong>
+                <span>CEO, NMO</span>
+              </div>
+              <!-- Replace the href below with your actual Marc video testimonial link -->
+              <a href="#" class="btn btn--ghost testimonial__video" target="_blank" rel="noopener">Watch the video testimonial</a>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial reveal reveal--delay-2">
+            <p class="testimonial__quote">"Suliman has a sharp ability to understand a brand at a deeper level. He picked up our voice quickly and translated it into work that actually felt aligned with us. The process was efficient and straightforward."</p>
+            <footer class="testimonial__author">
+              <div class="testimonial__author-details">
+                <strong>Shayne Valinsky</strong>
+                <span>CEO, Brayne AI</span>
+              </div>
+              <!-- Replace the href below with your actual Brayne AI brand link -->
+              <a href="https://brayneai.com/" class="btn btn--ghost testimonial__brand-btn" target="_blank" rel="noopener">Visit Brayne AI</a>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial testimonial--centered reveal reveal--delay-3">
+            <p class="testimonial__quote">"I must say, I found you very responsive and on time for providing me with the copy. I highly recommend any product team to rely on your service."</p>
+            <footer class="testimonial__author">
+              <div class="testimonial__author-details">
+                <strong>Moin</strong>
+                <span>CEO, Typewriting AI</span>
+              </div>
+              <a href="https://typewriting.ai/" class="btn btn--ghost testimonial__brand-btn" target="_blank" rel="noopener">Visit Typewriting AI</a>
+            </footer>
+          </blockquote>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACT / CTA SECTION
+         CUSTOMIZE: headline, sub, email, social links
+         ============================================================ -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="contact__inner">
+          <span class="section-tag reveal">Contact</span>
+          <h2 class="contact__headline reveal reveal--delay-1">
+            Ready to make<br /><em>your copy work?</em>
+          </h2>
+          <p class="contact__sub reveal reveal--delay-2">
+           Book a free 15-minute call.
+I’ll look at what’s not working and how to improve it.
+        Or message me on Telegram / X if you have any questions or just want to say hi.
+          </p>
+          <!-- CUSTOMIZE: mailto link -->
+          <a href="https://calendly.com/voidlnkmarketing/30min" class="btn btn--primary btn--large reveal reveal--delay-3">
+            BOOK A FREE 15MIN CALL
+          </a>
+          <div class="contact__links reveal reveal--delay-4">
+            <a href="https://t.me/voidlnk" class="contact__logo-link contact__logo-link--telegram" target="_blank" rel="noopener" aria-label="Message on Telegram">
+              <svg class="contact__logo-icon" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+                <path d="M8 30L54 12 38 52 34 34 22 28 46 24z" fill="currentColor"/>
+              </svg>
+              <span class="contact__logo-label">TELEGRAM</span>
+            </a>
+            <a href="https://x.com/voidlnk" class="contact__logo-link contact__logo-link--x" target="_blank" rel="noopener" aria-label="Message on X">
+              <svg class="contact__logo-icon" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+                <text x="50%" y="55%" text-anchor="middle" dominant-baseline="middle" font-family="Cormorant Garamond, serif" font-size="42" fill="currentColor">𝕏</text>
+              </svg>
+              <span class="contact__logo-label"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       CUSTOMIZE: name, year, email
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__logo">Suliman<span>.</span></p>
+        <p class="footer__copy">&copy; 2026 Suliman. All rights reserved.</p>
+        <a href="mailto:hello@janedoe.com" class="footer__email">voidlnkmarketing@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/cursor.js" defer></script>
+  <script src="js/scroll.js" defer></script>
+  <script src="js/nav.js" defer></script>
+  <script src="js/three-scene.js" defer></script>
+  <script src="js/heroCanvas.js" defer></script>
+
+</body>
+</html>
