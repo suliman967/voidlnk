@@ -861,7 +861,7 @@ body {
   }
   .nav {
     position: fixed;
-    top: 0;
+    top: 20;
     left: 0;
     right: 0;
     padding-inline: 20px;
